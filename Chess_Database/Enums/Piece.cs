@@ -8,11 +8,11 @@ namespace Chess_Database.Enums
 {
     public enum Piece
     {
-        Pawn,
-        Knight,
-        Bishop,
-        Rook,
-        Queen,
-        King
+        Pawn = 1,
+        Knight = 2,
+        Bishop = 3,
+        Rook = 4,
+        Queen = 5,
+        King = 6
     }
 }
