@@ -63,6 +63,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Database\Models\Ply.cs" />
+    <Compile Include="Database\PlyBase.cs" />
+    <Compile Include="Enums\Color.cs" />
+    <Compile Include="Enums\Extensions\PieceExtensions.cs" />
+    <Compile Include="Enums\Extensions\SquareExtensions.cs" />
     <Compile Include="Enums\Piece.cs" />
     <Compile Include="Enums\Square.cs" />
     <Compile Include="MainWindow.xaml.cs">
@@ -71,6 +76,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\IEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -98,8 +104,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="GUI\Commands\" />
+    <Folder Include="GUI\Display\" />
     <Folder Include="Models\" />
     <Folder Include="Modules\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
